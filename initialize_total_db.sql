@@ -89,6 +89,8 @@ CREATE TABLE IF NOT EXISTS public.user_app
     last_name text COLLATE pg_catalog."default" NOT NULL,
     "position" text COLLATE pg_catalog."default" NOT NULL,
     is_admin boolean NOT NULL,
+    login text COLLATE pg_catalog."default" NOT NULL,
+    password text COLLATE pg_catalog."default" NOT NULL,
     CONSTRAINT user_pkey PRIMARY KEY (user_id)
 )
 
