@@ -99,6 +99,9 @@ TABLESPACE pg_default;
 ALTER TABLE IF EXISTS public.user_app
     OWNER to postgres;
 
+INSERT INTO public.user_app (first_name, last_name, position, is_admin, login, password)
+    VALUES ('Главный администратор', '', 'Администратор системы', true, 'admin', 'admin');
+
 -- Table: public.project
 
 -- DROP TABLE IF EXISTS public.project;
